@@ -2,9 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
-  labels:
-    component-name: service-broker
-    bcdr-candidate: f
 spec:
   replicas: 1
   revisionHistoryLimit: 3
