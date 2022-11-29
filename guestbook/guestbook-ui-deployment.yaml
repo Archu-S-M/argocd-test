@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
   labels:
-    some-label: new-label
+    bcdr-candidate: t
 spec:
   replicas: 1
   revisionHistoryLimit: 3
