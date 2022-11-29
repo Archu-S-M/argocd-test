@@ -4,6 +4,7 @@ metadata:
   name: guestbook-ui
   labels:
     new-label: test-label
+    bcdr-candidate: f
 spec:
   replicas: 5
   revisionHistoryLimit: 3
