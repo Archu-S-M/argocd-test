@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   name: guestbook-ui
   labels:
-    bcdr-candidate: t
+    bcdr-candidate: xx
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
