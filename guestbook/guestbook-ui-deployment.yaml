@@ -5,7 +5,7 @@ metadata:
   labels:
     bcdr-candidate: t
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
