@@ -7,6 +7,10 @@ metadata:
     chart: {{ template "helm-guestbook.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
+     {{ if .Values.bcdrLabels.enabled }}
+    bcdr-candidate: t
+    component-name: common-service-broker
+  {{ end }}
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
