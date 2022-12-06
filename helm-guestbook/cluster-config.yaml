@@ -3,4 +3,4 @@ cluster:
   name: "local-dev"
 bcdrLabels:
   enableController: false
-  enabled: false
+  enabled: true
