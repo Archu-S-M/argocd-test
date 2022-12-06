@@ -2,5 +2,5 @@ cluster:
   url: "https://kubernetes.default.svc"
   name: "local-dev"
 bcdrLabels:
-  enableController: true
+  enableController: false
   enabled: true
