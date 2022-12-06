@@ -12,7 +12,11 @@ metadata:
     component-name: common-service-broker
     {{ end }}
 spec:
+  {{ if .values.bcdrLabels.enableController }}
+  replicas: 5
+  {{ else }}
   replicas: {{ .Values.replicaCount }}
+  {{ end }}
   revisionHistoryLimit: 3
   selector:
     matchLabels:
