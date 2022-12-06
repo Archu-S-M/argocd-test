@@ -45,5 +45,5 @@ tolerations: []
 affinity: {}
 
 bcdrLabels:
-  enableController: true
-  enabled: true
+  enableController: false
+  enabled: false
